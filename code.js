@@ -1,5 +1,15 @@
-document.addEventListener("click",sacEkle);
+let sacVarMi = false;
+let resim=document.querySelector("img")
 
-function sacEkle(){
-    document.querySelector("img").src="images/sac.png";
+document.addEventListener("click",degistir);
+
+function degistir(){
+    sacVarMi = !sacVarMi;
+
+    if(sacVarMi){
+        resim.src = "images/sac.png";
+    }else{
+        resim.src = "images/kel.png";
+    }
+    
 }
